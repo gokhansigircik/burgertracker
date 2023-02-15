@@ -18,27 +18,27 @@
             </div>
             <div class="card-body">
                 <div class="card-body">
-                    <form:form action="/burgers/${burger.id }" method="post" modelAttribute="burger">
+                    <form:form action="/edit/${burger.id }" method="post" modelAttribute="burger">
                     <input type="hidden" name="_method" value="put">
                         <p>
                             <form:label path="name" class="form-label">Burger Name</form:label>
-                            <form:errors path="name" class="text-danger" />
-                            <form:input path="name" class="form-control form-control"/>
+                            <form:errors path="name"/>
+                            <form:input path="name" value="${name}"></form:input>
                         </p>
                         <p>
                             <form:label path="restaurant" class="form-label">Restaurant Name</form:label>
-                            <form:errors path="restaurant" class="text-danger" />
-                            <form:input path="restaurant" class="form-control form-control"/>
+                            <form:errors path="restaurant"/>
+                            <form:input path="restaurant" value="${restaurant}"></form:input>
                         </p>
                         <p>
                             <form:label path="rating">Rating (Out of 5)</form:label>
-                            <form:errors path="rating" class="text-danger" />
-                            <form:input type="number" path="rating" class="form-control form-control"/>
+                            <form:errors path="rating"/>
+                            <form:input type="number" path="rating" value="${rating}"></form:input>
                         </p>
                         <p>
                             <form:label path="notes" class="form-label">Notes</form:label>
-                            <form:errors path="notes" class="text-danger" />
-                            <form:input path="notes" class="form-control form-control"/>
+                            <form:errors path="notes"/>
+                            <form:input path="notes" value="${notes}"></form:input>
                         </p> 
                         <div class="d-flex justify-content-end">
                             <button type="submit" class="btn btn-primary">

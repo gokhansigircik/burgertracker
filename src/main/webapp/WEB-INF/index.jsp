@@ -66,6 +66,7 @@ pageEncoding="UTF-8"%>
                 <th>Restaurant</th>
                 <th>Notes</th>
                 <th>Rating</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -75,6 +76,9 @@ pageEncoding="UTF-8"%>
                   <td><a href="/burgers/${bur.id}"><c:out value="${bur.name}"></c:out></a></td>
                   <td><c:out value="${bur.restaurant}"></c:out></td>
                   <td><c:out value="${bur.rating}"></c:out></td>
+                  <td>
+                    <a href="burgers/edit/${bur.id}">Edit</a>
+                  </td>
                 </tr>
               </c:forEach>
             </tbody>

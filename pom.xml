@@ -61,6 +61,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		 <!-- DEPENDENCY FOR USING VALIDATION ANNOTATIONS -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
 		<!-- DEPENDENCIES FOR BOOTSTRAP -->
         <dependency>
             <groupId>org.webjars</groupId>
@@ -77,10 +83,6 @@
             <artifactId>jquery</artifactId>
             <version>3.6.0</version>
         </dependency>
-		<dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-validation</artifactId>
-    </dependency> 
 	</dependencies>
 
 	<build>

@@ -20,13 +20,13 @@ public class Burger {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotNull
-    @Size(min = 5, max = 200)
+    @Size(min = 1, max = 50)
     private String name;
     @NotNull
-    @Size(min = 5, max = 200)
+    @Size(min = 1, max = 50, message="Name must be at least 2 character")
     private String restaurant;
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 1, max = 40, message="Restaurant must be at least 2 character")
     private String notes;
     @NotNull
     @Min(1)

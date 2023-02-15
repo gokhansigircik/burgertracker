@@ -36,7 +36,15 @@ public class BurgerService {
         } else {
             return null;
         }
-    }
+	}
+	public List<Burger> findAll(){
+		return burgerRepository.findAll();
+	}
+	public Burger updateBurger(Burger b) {
+		return burgerRepository.save(b);
+	}
+	public void deleteBurger(Long id) {
+		this.burgerRepository.deleteById(id);
+	}
 }
-
 
